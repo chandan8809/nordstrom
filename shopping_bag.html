@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="//n.nordstrommedia.com/id/169f9507-47b3-44bc-9ad4-9244fe191523.png" sizes="16x16" />
+    <link rel="icon" href="//n.nordstrommedia.com/id/69be546b-0c64-4cd0-8840-67a112d242d7.png" sizes="32x32" />
+    <link rel="icon" href="//n.nordstrommedia.com/id/c4fb2a09-3657-4161-9b79-6412897d9399.png" sizes="96x96" />
+    <script src="https://kit.fontawesome.com/0cbcac785e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="//n.nordstrommedia.com/id/169f9507-47b3-44bc-9ad4-9244fe191523.png" sizes="16x16" /><link rel="icon" href="//n.nordstrommedia.com/id/69be546b-0c64-4cd0-8840-67a112d242d7.png" sizes="32x32" /><link rel="icon" href="//n.nordstrommedia.com/id/c4fb2a09-3657-4161-9b79-6412897d9399.png" sizes="96x96" />
-    <link rel="stylesheet" href="./css/product_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shopping_bag.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js"></script>
+    <title>Document</title>
 </head>
 <body>
+    
     <div id="header">
         <body onclick="removeDropdown()">
             <div id="top">
@@ -2272,69 +2282,45 @@
             </div>
         </body>
     </div>
-    <p class="breadcrumb"><span><a href="./">Home</a></span> / Men / Clothing</p>
-    <div class="flex">
-        <div class="leftbox">
-            <p>Gender</p>
-            <hr>
-                <input type="checkbox" name="" id="">
-                <label id="men" for="">Men's</label><br>
-                <input type="checkbox" name="" id="">
-                <label id="women" for="">Women's</label>
-            <hr>
-            <p>Size</p>
-            <hr>
-            <p>Color</p>
-                <div class="scroll">
-                <input type="checkbox" name="" id="">
-                <label for="">Blue</label><br>
-                <input type="checkbox" name="" id="">
-                <label for="">Red</label><br>
-                <input type="checkbox" name="" id="">
-                <label for="">Grey</label><br>
-                </div>
-            <hr>
-            <p>Brand</p>
-            <hr>
-            <p>Material</p>
-            <hr>
-            <p>Price</p>
-                <input type="checkbox" name="" id="">
-                <label for="">500-10000</label><br>
-                <input type="checkbox" name="" id="">   
-                <label for="">10001-50000</label><br>
-            <hr>
-            <p>Sale</p>
-            <hr>
-            <p>Style</p>
-            <hr>
+
+
+    <div class="container">
+        <div class="shopping_bag">
+            <div style="background-color: gainsboro;">Shopping Bag (<span id="TotalItem">0</span>)</div>
+            
         </div>
-        <div id="text">
-            <h3>Fall Staples</h3>
-            <div id ="name">
-                <p>Shirts</p>
-                <p>Loungewear</p>
-                <p>Sweaters</p>
-                <p>Jeans</p>
-                <p>Jackets</p>
-                <p>Pants</p>
+        <div class="shopping2">
+            <h1>Shopping bag</h1>
+            <div style="color:#393939"><i class="fas fa-gift" style="font-size: 23px;"></i> Choose gift options when you check out.<br>
+            Items in your bag are not on hold.</div>
+            <hr>
+        </div>   <!--static part end-->
+
+        <div id="product">
+
+        </div>    <!--product done-->
+
+        <div id="subtotal">
+            <div id="leftbox">
+                <p>Accepted Payment Methods</p>
+                <img src="https://guambar.org/system/userfiles/images/paypal-credit-cards.png">
+                <h3 style="font-weight: 300;font-size: 15px;">Need help? Call 1.888.282.6060 or <span style="color: blue;">chat with us<br>Shipping internationally?</span></h3>
             </div>
+            <div id="rightbox">
+                <div id="subtotal">
+                    <h3>Subtotal</h3>
+                    <P></P>
+
+                </div>
+                <hr>
+                <button id="gotopay">Check Out</button>
+                
+            </div>
+
         </div>
+
+       
     </div>
-     
-         
-    <div class="srt">
-        <h3>Men's Clothing </h3>
-        <select id="sort">
-            <option value="">sort by feature</option>
-            <option value="High_low">High to Low</option>
-            <option value="Low_high">Low to High</option>
-        </select>
-    </div>
-
-
-    <div id="products_container"> </div>
-
     <div id="footer">
         <div class="foot">
             <div class="foot-column">
@@ -2410,6 +2396,7 @@
             <p>&copy; 2021 Nordstrom, Inc</p>
         </div>
     </div>
-    <script src="./js/product.js"></script>
+    
 </body>
+<script src="./js/shopping_bag.js"></script>
 </html>
